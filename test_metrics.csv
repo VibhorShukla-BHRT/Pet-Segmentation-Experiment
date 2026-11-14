@@ -1,0 +1,3 @@
+model,best_validation_epoch,test_loss,test_mIoU,test_pixel_accuracy,trainable_parameters,test_IoU_pet_foreground,test_IoU_background,test_IoU_boundary
+Baseline,20,0.35517261270509815,0.7234595417976379,0.8854432702064514,1754819,0.7833886,0.88371354,0.5032765
+Skip fusion,20,0.33944022635180215,0.7336685061454773,0.8902261257171631,1948355,0.7907888,0.8866275,0.52358913

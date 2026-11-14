@@ -1,0 +1,3 @@
+model,parameters,latency_ms_per_image,device,input_shape,warmup_runs,timed_runs,measurement_scope
+Baseline,1754819,3.046923819999847,cuda,1x3x128x128,20,100,model forward pass only; excludes file I/O and preprocessing
+Skip fusion,1948355,4.254629990000467,cuda,1x3x128x128,20,100,model forward pass only; excludes file I/O and preprocessing

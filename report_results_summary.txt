@@ -1,0 +1,15 @@
+EXPERIMENT RESULTS - COPY ONLY VALUES FROM THIS FILE INTO YOUR OWN ANALYSIS
+
+Split protocol: official trainval/test lists; trainval stratified 80/20 train/validation split
+
+TEST METRICS
+      model  best_validation_epoch  test_loss  test_mIoU  test_pixel_accuracy  trainable_parameters  test_IoU_pet_foreground  test_IoU_background  test_IoU_boundary
+   Baseline                     20   0.355173   0.723460             0.885443               1754819                 0.783389             0.883714           0.503277
+Skip fusion                     20   0.339440   0.733669             0.890226               1948355                 0.790789             0.886627           0.523589
+
+LATENCY
+      model  parameters  latency_ms_per_image device input_shape  warmup_runs  timed_runs                                            measurement_scope
+   Baseline     1754819              3.046924   cuda 1x3x128x128           20         100 model forward pass only; excludes file I/O and preprocessing
+Skip fusion     1948355              4.254630   cuda 1x3x128x128           20         100 model forward pass only; excludes file I/O and preprocessing
+
+Interpret the numbers yourself after inspecting the qualitative examples and failure cases.
