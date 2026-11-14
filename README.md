@@ -39,8 +39,5 @@ GitHub: [Project](https://github.com/VibhorShukla-BHRT/Pet-Segmentation-Experime
 - `checkpoints/`: best validation checkpoints (large; do not commit unless needed)
 - `plots/` and `predictions/`: plots and qualitative examples
 
-## Important
-Do not treat the test metrics as validation results. Checkpoint selection uses validation mIoU; the test set is evaluated after training. Latency numbers are hardware-dependent and exclude image loading and preprocessing.
-
 ## Reference
 Parkhi, O. M., Vedaldi, A., Zisserman, A., and Jawahar, C. V. (2012). Cats and Dogs. IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
